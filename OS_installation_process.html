@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elive OS Installation Guide</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    h1, h2 {
+      color: #00bcd4;
+      text-align: center;
+    }
+    .slide {
+      display: none;
+    }
+    .slide.active {
+      display: block;
+    }
+    .step {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #2a2a2a;
+      border-left: 5px solid #00bcd4;
+      border-radius: 8px;
+    }
+    .step p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .step code {
+      background-color: #333;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #90ee90;
+    }
+    img {
+      max-width: 100%;
+      margin-top: 15px;
+      border-radius: 8px;
+      border: 1px solid #444;
+    }
+    .navigation {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .navigation button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      border: none;
+      background: #00bcd4;
+      color: #000;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .navigation button:hover:enabled {
+      background: #0097a7;
+    }
+    .navigation button:disabled {
+      background: #444;
+      color: #888;
+      cursor: not-allowed;
+    }
+    .image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.image-wrapper img {
+  width: 600px;
+  height: 350px;
+  object-fit: cover; /* keeps images cropped nicely */
+  border-radius: 12px;
+  border: 2px solid #2c2c2c;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+  border-color: #00bcd4;
+}
+
+/* Optional: Caption styling */
+.image-caption {
+  text-align: center;
+  color: #ccc;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 14px;
+}
+@media (max-width: 650px) {
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Steps to Install Elive OS in VMware</h1>
+
+  <div class="slide active">
+    <div class="step">
+      <h2>Step 1: Download Elive OS ISO</h2>
+      <p>Visit the official <a href="https://www.elivecd.org/download/">Elive OS</a> website and download the latest ISO file (~3.5 GB).</p>
+      <img src="images/1.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 2: Create New Virtual Machine</h2>
+      <p>Open <code>VMware Workstation Player</code> → Click <code>Create a New Virtual Machine</code>.</p>
+      <img src="images/2.png" alt="Download ISO"> 
+    </div>
+  </div>
+    <div class="slide">
+    <div class="step">
+      <h2>Step 2: Create New Virtual Machine</h2>
+      <p>Select <code>Installer disc image file (iso)</code> and choose your downloaded Elive ISO.</p>
+      <img src="images/3.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 3: Choose OS Type</h2>
+      <p>If VMware doesn’t auto-detect the OS, select manually:</p>
+      <p><code>Guest OS: Linux</code> | <code>Version: Ubuntu 64-bit</code></p>
+      <img src="images/4.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 4: Name and Save Location</h2>
+      <p>Name your VM (e.g. <code>Elive_OS_Abraham</code>) and save to a desired folder.</p>
+      <img src="images/5.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 5: Set Disk Size</h2>
+      <p>Set virtual disk size to at least <code>20 GB</code>. Choose <code>Store as a single file</code>.</p>
+      <img src="images/6.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 6: Customize Hardware</h2>
+      <ul>
+        <li>Memory: <code>2 GB</code></li>
+        <li>Processors: <code>2 cores</code></li>
+        <li>Network Adapter: <code>NAT</code></li>
+        <li>Display: <code>Enable 3D acceleration (optional)</code></li>
+      </ul>
+      <img src="images/7.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 7: Start the Virtual Machine</h2>
+      <p>Click <code>Play Virtual Machine</code>. Wait until the Elive OS Live Session boots.</p>
+      <img src="images/8.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 8: Begin Installation</h2>
+      <p>On the desktop, click the <code>Elive Installer</code> icon to launch the setup wizard.</p>
+      <img src="images/9.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 9: Language and Keyboard</h2>
+      <p>Select your preferred language and keyboard layout, then proceed.</p>
+      <img src="images/10.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 10: Partitioning</h2>
+      <p>Choose <code>Automatic Partitioning</code> (recommended). It sets up root and swap.</p>
+      <img src="images/parti.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 11: Network and User Settings</h2>
+      <p>Set up network configuration</p>
+      <img src="images/confugure.png" alt="Download ISO">
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 11: Network and User Settings</h2>
+      <p>username, password, and computer hostname.</p>
+      <img src="images/user.png" alt="Download ISO">
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 12: Confirm and Install</h2>
+      <p>Review your settings, then begin installation. When prompted, remove the ISO.</p>
+      <img src="images/12.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="step">
+      <h2>Step 13: First Boot</h2>
+      <p><code>Reboot</code>  the VM.</p>
+      <img src="images/14.png" alt="Download ISO"> 
+    </div>
+      <div class="slide">
+    <div class="step">
+      <h2>Step 13: First Boot</h2>
+      <p>Login with your credentials and enjoy using Elive OS!</p>
+      <img src="images/13.png" alt="Download ISO"> 
+    </div>
+  </div>
+    <div class="slide">
+    <div class="step">
+      <h2>Step 14: After Installation</h2>
+      <p>Chrome usage After installation</p>
+      <img src="images/15.png" alt="Download ISO"> 
+    </div>
+  </div>
+
+  <div class="navigation">
+    <button id="prevBtn" onclick="changeSlide(-1)" disabled>Previous</button>
+    <button id="nextBtn" onclick="changeSlide(1)">Next</button>
+  </div>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  function changeSlide(n) {
+    slides[currentSlide].classList.remove("active");
+    currentSlide += n;
+    slides[currentSlide].classList.add("active");
+
+    prevBtn.disabled = currentSlide === 0;
+    nextBtn.disabled = currentSlide === slides.length - 1;
+  }
+</script>
+
+</body>
+</html>
