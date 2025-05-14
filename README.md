@@ -3,20 +3,25 @@
 This repository contains the documentation and implementation for the **Elive OS installation** process using VMware Workstation Player, along with a demonstration of the **`getpid()` system call** using a simple C program. 
 
 ---
-<span style="color:red">## Installation steps:</span>
+## Elive OS Installation on VMware 
 <details>
-  <summary>Elive OS on VMware</summary>
+  <summary> Installation steps:</summary>
 
   ### Requirements:
+<details>
+   <summary>Requirement:</summary>
   - **Elive OS ISO** ([Download Oficial Website](https://www.elivecd.org/))
   - **VMware Workstation Player** (Free virtualization software)
   - A host system with at least:
     - Dual-core processor
     - 2 GB RAM (for VM)
     - 20 GB free disk space
+</details>
 
   ### Steps:
-
+<details>
+  <summary>Installation steps:</summary>
+  
   1. **Download Elive OS ISO** from [elivecd.org](https://www.elivecd.org/)
   2. **Launch VMware Workstation Player** and click “Create a New Virtual Machine”
   3. **Choose the ISO file** as installation media
@@ -44,13 +49,14 @@ This repository contains the documentation and implementation for the **Elive OS
 
   - **Elive OS Installation in webpages with Screenshots**:  
     [View Elive OS Installation_steps in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/OS_installation.html)
-  
+
+</details>
 </details>
 
 ---
 ## System Call Implementation: 
 <details>
-  <summary>Details</summary>
+  <summary>System Call</summary>
 
   This project demonstrates the use of the `getpid()` system call in a Linux-based environment. It was completed as part of the OSSP (Operating System and System Programming) course at **Bahir Dar Institute of Technology**.
 
@@ -58,6 +64,8 @@ This repository contains the documentation and implementation for the **Elive OS
   To implement and test the `getpid()` system call using a simple C program. This helps understand how system calls work and how processes are identified in Unix-like operating systems.
 
   ### Implementation Steps
+<details>
+  <summary>Steps</summary>
 
   1. Create a new C file (e.g., `abraham.c`)  
   2. Write the `getpid()` implementation code in the file:
@@ -98,6 +106,8 @@ This repository contains the documentation and implementation for the **Elive OS
      Each run generates a different PID, demonstrating that a new process is created each time.
 ---
   [View System Call in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/System_call.html)
+
+  </details>
 
 </details>
 
