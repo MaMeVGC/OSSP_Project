@@ -131,7 +131,7 @@ This repository contains the documentation and implementation for the **Elive OS
 
 </details>
 
----
+-----
 
 ## Author
 
@@ -154,6 +154,6 @@ Undergraduate Software Engineering Student
 - Open Source Collaboration  
 
 **Find Me Online:**  
-- GitHub: [github.com/Ababu1212](https://github.com/Ababu1212)  
-- LinkedIn: [Your LinkedIn URL Here]  
-- Email: [gmail:abrahamabunu1995@gmail.com]
+- [GitHub](https://github.com/Ababu1212)  
+- [LinkedIn](https://linkedin.com/in/abraham-abunu-056853343)  
+- [Email](mailto:Abrahamabunu1995@gmail.com)
