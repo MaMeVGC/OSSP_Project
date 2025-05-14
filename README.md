@@ -8,14 +8,17 @@ This repository contains the documentation and implementation for the **Elive OS
   <summary> Installation steps:</summary>
 
   ### Requirements:
+  
 <details>
-   <summary>Requirement:</summary>
-  - **Elive OS ISO** ([Download Oficial Website](https://www.elivecd.org/))
+  <summary>Requirement:</summary>
+
+  - **Elive OS ISO** ([Download Official Website](https://www.elivecd.org/))
   - **VMware Workstation Player** (Free virtualization software)
   - A host system with at least:
-    - Dual-core processor
-    - 2 GB RAM (for VM)
-    - 20 GB free disk space
+    - Dual-core processor  
+    - 2 GB RAM (for VM)  
+    - 20 GB free disk space  
+
 </details>
 
   ### Steps:
