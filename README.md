@@ -4,18 +4,6 @@ This repository contains the documentation and implementation for the **Elive OS
 
 ---
 
-## Live Website  
-Experience a website of the Elive OS installation and system call implementation:  
-**[Elive OS Installation & System Call](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/)**
-
----
-
-## Full Report (PDF with Screenshots)  
-Download or view the detailed project report with step-by-step instructions and screenshots:  
-**[Download Full PDF Report](https://github.com/Ababu1212/OSSP_Project_Abraham_Abunu/blob/main/OSSP_Individual_Abraham_Abunu_BDU1600595_A.pdf)**
-
----
-
 ## Installation Guide: Elive OS on VMware
 
 ### Requirements:
@@ -110,3 +98,19 @@ To implement and test the `getpid()` system call using a simple C program. This 
 
 
   [View System Call in webpageswith Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/System_call.html)
+
+
+
+
+### Additional Resources 
+
+
+## Live Website  
+Experience a website of the Elive OS installation and system call implementation:  
+**[Elive OS Installation & System Call](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/)**
+
+---
+
+## Full Report (PDF with Screenshots)  
+Download or view the detailed project report with step-by-step instructions and screenshots:  
+**[Download Full PDF Report](https://github.com/Ababu1212/OSSP_Project_Abraham_Abunu/blob/main/OSSP_Individual_Abraham_Abunu_BDU1600595_A.pdf)**
