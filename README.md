@@ -5,7 +5,7 @@ This repository contains the documentation and implementation for the **Elive OS
 ---
 
 <details>
-  ##<summary>Installation steps: Elive OS on VMware</summary>
+  <summary>## Installation steps: Elive OS on VMware</summary>
 
   ### Requirements:
   - **Elive OS ISO** ([Download Oficial Website](https://www.elivecd.org/))
