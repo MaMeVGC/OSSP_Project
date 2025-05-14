@@ -163,3 +163,12 @@ Undergraduate Software Engineering Student
 - [GitHub](https://github.com/Ababu1212)  
 - [LinkedIn](https://linkedin.com/in/abraham-abunu-056853343)  
 - [Email](mailto:Abrahamabunu1995@gmail.com)
+
+
+
+---
+
+![Logo](https://example.com/logo.png)
+
+
+---
