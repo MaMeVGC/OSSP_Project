@@ -40,7 +40,9 @@ This repository contains the documentation and implementation for the **Elive OS
   14. **Reboot** to enter the fully installed Elive OS environment
 
 
-  - **Elive OS Installation**:  
+---
+
+  - **Elive OS Installation in webpages with Screenshots**:  
     [View Elive OS Installation_steps in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/OS_installation.html)
   
 </details>
@@ -94,7 +96,7 @@ This repository contains the documentation and implementation for the **Elive OS
 
   8. Observe the output showing the Process ID (PID).  
      Each run generates a different PID, demonstrating that a new process is created each time.
-
+---
   [View System Call in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/System_call.html)
 
 </details>
