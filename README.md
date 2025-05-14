@@ -1,6 +1,6 @@
-# OSSP_Project_Abraham_Abunu
+# Elive_OS 
 
-This repository contains the documentation and implementation for the **Elive OS installation** process using VMware Workstation Player, along with a demonstration of the **`getpid()` system call** using a simple C program. This work was submitted as part of the Operating System and System Programming (OSSP) individual project at **Bahir Dar Institute of Technology**.
+This repository contains the documentation and implementation for the **Elive OS installation** process using VMware Workstation Player, along with a demonstration of the **`getpid()` system call** using a simple C program. 
 
 ---
 ## Installation steps:
