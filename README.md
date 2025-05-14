@@ -5,7 +5,7 @@ This repository contains the documentation and implementation for the **Elive OS
 ---
 
 <details>
-  <summary>Installation steps: Elive OS on VMware</summary>
+  ##<summary>Installation steps: Elive OS on VMware</summary>
 
   ### Requirements:
   - **Elive OS ISO** ([Download Oficial Website](https://www.elivecd.org/))
@@ -48,7 +48,7 @@ This repository contains the documentation and implementation for the **Elive OS
 ---
 
 <details>
-  <summary>System Call ImplementationSteps: `getpid()`</summary>
+  ##<summary>System Call ImplementationSteps: `getpid()`</summary>
 
   This project demonstrates the use of the `getpid()` system call in a Linux-based environment. It was completed as part of the OSSP (Operating System and System Programming) course at **Bahir Dar Institute of Technology**.
 
@@ -102,7 +102,7 @@ This repository contains the documentation and implementation for the **Elive OS
 ---
 
 <details>
-  <summary>Additional Resources</summary>
+  ##<summary>Additional Resources</summary>
 
   ### Live Website  
   Experience a website of the Elive OS installation and system call implementation:  
