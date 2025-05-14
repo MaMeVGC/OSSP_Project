@@ -1,4 +1,4 @@
---
+---
 ![Logo](logo-elive.png)
 
 ---
@@ -6,7 +6,7 @@
 
 This repository contains the documentation and implementation for the **Elive OS installation** process using VMware Workstation Player, along with a demonstration of the **`getpid()` system call** using a simple C program. 
 
----
+--
 ## Elive OS Installation on VMware 
 <details>
   <summary> Installation steps:</summary>
@@ -58,9 +58,10 @@ This repository contains the documentation and implementation for the **Elive OS
     [View Elive OS Installation_steps in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/OS_installation.html)
 
 </details>
+
 </details>
 
----
+--
 ## System Call Implementation: 
 <details>
   <summary>System Call</summary>
@@ -127,7 +128,8 @@ This repository contains the documentation and implementation for the **Elive OS
   Experience a website of the Elive OS installation and system call implementation:  
   **[Elive OS Installation & System Call](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/)**
 
-  ---
+  --
+  
 
   ### Full Report (PDF with Screenshots)  
   Download or view the detailed project report with step-by-step instructions and screenshots:  
@@ -135,7 +137,7 @@ This repository contains the documentation and implementation for the **Elive OS
 
 </details>
 
------
+---
 
 # Author
 
@@ -167,8 +169,6 @@ Undergraduate Software Engineering Student
 
 
 ---
-
-![Logo](https://example.com/logo.png)
 
 
 ---
