@@ -56,37 +56,57 @@ Download or view the detailed project report with step-by-step instructions and 
 
 ---
 
-## System Programming: `getpid()` System Call
+# System Call Demonstration: `getpid()`
 
-### What is `getpid()`?
-
-The `getpid()` system call returns the **Process ID (PID)** of the currently executing process. It is a fundamental function used in monitoring, debugging, multiprocessing, and logging.
+This project demonstrates the use of the `getpid()` system call in a Linux-based environment. It was completed as part of the OSSP (Operating System and System Programming) course at **Bahir Dar Institute of Technology**.
 
 ---
-## Lab Implementation Steps: `getpid()` System Call
 
-1. Create a new C file (e.g., `abraham.c`)
-2. Write the `getpid()` implementation code in the file
+## Objective
 
-```c
-#include <stdio.h>
-#include <unistd.h>
+To implement and test the `getpid()` system call using a simple C program. This helps understand how system calls work and how processes are identified in Unix-like operating systems.
 
-int main() {
-    pid_t pid = getpid();  // Get current process ID
-    printf("The Process ID is: %d\n", pid);
-    return 0;
-}
+---
 
-3. Save and exit the file
-4. Update system packages   sudo apt update
-sudo apt install build-essential
-5. Install the GCC compiler if it's not already installed
-6. Compile the C program using GCC  gcc abraham.c -o abraham
-7. Run the compiled executable
-8. Observe the output showing the process ID (PID)
+## Implementation Steps
+
+1. Create a new C file (e.g., `abraham.c`)  
+2. Write the `getpid()` implementation code in the file:
+
+    ```c
+    #include <stdio.h>
+    #include <unistd.h>
+
+    int main() {
+        pid_t pid = getpid();  // Get current process ID
+        printf("The Process ID is: %d\n", pid);
+        return 0;
+    }
+    ```
+
+3. Save and exit the file  
+4. Update system packages:
+
+    ```bash
+    sudo apt update
+    sudo apt install build-essential
+    ```
+
+5. Install the GCC compiler if it's not already installed  
+6. Compile the C program using GCC:
+
+    ```bash
+    gcc abraham.c -o abraham
+    ```
+
+7. Run the compiled executable:
+
+    ```bash
+    ./abraham
+    ```
+
+8. Observe the output showing the Process ID (PID).  
+   Each run generates a different PID, demonstrating that a new process is created each time.
 
 
-- **System Call: `getpid()`**:  
-  [View System Call](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/System_call.html) 
-
+  [View System Call](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/System_call.html)
