@@ -1,3 +1,7 @@
+--
+![Logo](logo-elive.png)
+
+---
 # Elive_OS 
 
 This repository contains the documentation and implementation for the **Elive OS installation** process using VMware Workstation Player, along with a demonstration of the **`getpid()` system call** using a simple C program. 
