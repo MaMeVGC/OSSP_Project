@@ -130,3 +130,30 @@ This repository contains the documentation and implementation for the **Elive OS
   **[Download Full PDF Report](https://github.com/Ababu1212/OSSP_Project_Abraham_Abunu/blob/main/OSSP_Individual_Abraham_Abunu_BDU1600595_A.pdf)**
 
 </details>
+
+---
+
+## Author
+
+**Abraham Abunu**  
+Undergraduate Software Engineering Student  
+**Bahir Dar Institute of Technology (BiT), Ethiopia**  
+**Student ID:** BDU1600595  
+
+**Skills:**  
+- HTML, CSS, JavaScript  
+- Git & GitHub  
+- MySQL, Node.js  
+- C Programming  
+- Operating Systems & System Programming  
+
+**Interests:**  
+- Front-End Development  
+- Problem Solving  
+- System Programming  
+- Open Source Collaboration  
+
+**Find Me Online:**  
+- GitHub: [github.com/Ababu1212](https://github.com/Ababu1212)  
+- LinkedIn: [Your LinkedIn URL Here]  
+- Email: [gmail:abrahamabunu1995@gmail.com]
