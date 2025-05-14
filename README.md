@@ -133,25 +133,27 @@ This repository contains the documentation and implementation for the **Elive OS
 
 -----
 
-## Author
+# Author
 
 **Abraham Abunu**  
 Undergraduate Software Engineering Student  
 **Bahir Dar Institute of Technology (BiT), Ethiopia**  
+
 **Student ID:** BDU1600595  
 
 **Skills:**  
 - HTML, CSS, JavaScript  
 - Git & GitHub  
 - MySQL, Node.js  
-- C Programming  
-- Operating Systems & System Programming  
+
 
 **Interests:**  
 - Front-End Development  
 - Problem Solving  
 - System Programming  
-- Open Source Collaboration  
+- Open Source Collaboration
+- C Programming  
+  
 
 **Find Me Online:**  
 - [GitHub](https://github.com/Ababu1212)  
