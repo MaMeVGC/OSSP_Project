@@ -52,7 +52,7 @@ Download or view the detailed project report with step-by-step instructions and 
 
 
 - **Elive OS Installation**:  
-  [View Elive OS Installation_steps](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/OS_installation.html)
+  [View Elive OS Installation_steps in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/OS_installation.html)
 
 ---
 
@@ -109,4 +109,4 @@ To implement and test the `getpid()` system call using a simple C program. This 
    Each run generates a different PID, demonstrating that a new process is created each time.
 
 
-  [View System Call](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/System_call.html)
+  [View System Call in webpageswith Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/System_call.html)
