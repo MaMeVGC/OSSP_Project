@@ -44,7 +44,7 @@ This repository contains the documentation and implementation for the **Elive OS
 
 ---
 
-# System Call Demonstration: `getpid()`
+## System Call Demonstration: `getpid()`
 
 This project demonstrates the use of the `getpid()` system call in a Linux-based environment. It was completed as part of the OSSP (Operating System and System Programming) course at **Bahir Dar Institute of Technology**.
 
