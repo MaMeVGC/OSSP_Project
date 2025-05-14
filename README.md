@@ -5,7 +5,7 @@ This repository contains the documentation and implementation for the **Elive OS
 ---
 
 ## Live Website  
-Experience a live version of the documentation and demo:  
+Experience a website of the Elive OS installation and system call implementation:  
 **[Elive OS Installation & System Call](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/)**
 
 ---
@@ -52,7 +52,7 @@ Download or view the detailed project report with step-by-step instructions and 
 
 
 - **Elive OS Installation**:  
-  [View Elive OS Installation](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/OS_installation.html)
+  [View Elive OS Installation_steps](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/OS_installation.html)
 
 ---
 
@@ -67,13 +67,25 @@ The `getpid()` system call returns the **Process ID (PID)** of the currently exe
 
 1. Create a new C file (e.g., `abraham.c`)
 2. Write the `getpid()` implementation code in the file
+
+```c
+#include <stdio.h>
+#include <unistd.h>
+
+int main() {
+    pid_t pid = getpid();  // Get current process ID
+    printf("The Process ID is: %d\n", pid);
+    return 0;
+}
+
 3. Save and exit the file
-4. Update system packages
+4. Update system packages   sudo apt update
+sudo apt install build-essential
 5. Install the GCC compiler if it's not already installed
-6. Compile the C program using GCC
+6. Compile the C program using GCC  gcc abraham.c -o abraham
 7. Run the compiled executable
 8. Observe the output showing the process ID (PID)
-9.  
+
 
 - **System Call: `getpid()`**:  
   [View System Call](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/System_call.html) 
