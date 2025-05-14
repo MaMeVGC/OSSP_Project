@@ -138,9 +138,10 @@ This repository contains the documentation and implementation for the **Elive OS
 </details>
 
 ---
-***********************************************
-***********************************************
-***********************************************
+
+
+
+
 ---
 # Author
 
