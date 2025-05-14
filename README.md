@@ -6,26 +6,25 @@ This repository contains documentation and implementation of the **Elive OS inst
 
 ## Live Website  
 Experience the project live:  
-[**Elive OS Installation & System Call Demo**](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/)
+[**Elive OS Installation & System Call**](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/)
 
 ---
 
 ## PDF Report with Screenshots  
 View the full report including screenshots and step-by-step instructions:  
-[**View or Download the PDF Report**](https://github.com/Ababu1212/OSSP_Project_Abraham_Abunu/blob/main/OSSP_Individual_Abraham_Abunu_BDU1600595_A.pdf)
+[**View or Download Full PDF**](https://github.com/Ababu1212/OSSP_Project_Abraham_Abunu/blob/main/OSSP_Individual_Abraham_Abunu_BDU1600595_A.pdf)
 
 ---
 
-## Installation Guide (Elive OS on VirtualBox/VMware)
+## Installation Guide (Elive OS on VMware)
 
 1. **Download Elive OS ISO** from [elivecd.org](https://www.elivecd.org/)
-2. **Create a new virtual machine** in VirtualBox or VMware
+2. **Create a new virtual machine** in VMware
 3. Assign appropriate RAM, CPU, and storage
 4. Boot using the Elive ISO
 5. Follow the installer to complete setup
 6. Configure the system and user account
-
-> *See screenshots and details in the PDF Report.*
+7. Reboot and acess 
 
 ---
 
