@@ -3,7 +3,7 @@
 This repository contains the documentation and implementation for the **Elive OS installation** process using VMware Workstation Player, along with a demonstration of the **`getpid()` system call** using a simple C program. 
 
 ---
-## Installation steps:
+<span style="color:red">## Installation steps:</span>
 <details>
   <summary>Elive OS on VMware</summary>
 
