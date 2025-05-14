@@ -170,5 +170,5 @@ Undergraduate Software Engineering Student
 
 ---
 
-![Logo](download.jgp)
+![Logo](download.jpeg)
 ---
