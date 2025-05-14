@@ -54,29 +54,30 @@ Download or view the detailed project report with step-by-step instructions and 
 
 ## System Programming: `getpid()` System Call
 
-# Linux System Call Project: `getpid()`
+### What is `getpid()`?
 
-This project demonstrates the use of the **`getpid()` system call** using a simple C program. It was developed as part of the OSSP (Operating System and System Programming) course at **Bahir Dar Institute of Technology**.
-
----
-
-## What is `getpid()`?
-
-The `getpid()` system call returns the **process ID (PID)** of the currently running process. It helps identify and manage processes in Linux and is especially useful in debugging, logging, and multiprocessing environments.
+The `getpid()` system call returns the **Process ID (PID)** of the currently executing process. It is a fundamental function used in monitoring, debugging, multiprocessing, and logging.
 
 ---
+## Lab Implementation Steps: `getpid()` System Call
 
-## Full Implementation (Write, Compile, and Run)
+1. Create a new C file (e.g., `abraham.c`)
+2. Write the `getpid()` implementation code in the file
+3. Save and exit the file
+4. Update system packages
+5. Install the GCC compiler if it's not already installed
+6. Compile the C program using GCC
+7. Run the compiled executable
+8. Observe the output showing the process ID (PID)
 
-### Step 1: Open a terminal and create the C file
+### Source Code
 
-```bash
-nano abraham.c
+```c
 #include <stdio.h>
 #include <unistd.h>
 
 int main() {
-    pid_t pid = getpid();  // Fetch current process ID
+    pid_t pid = getpid();  // Get the process ID of this running program
     printf("The Process ID is: %d\n", pid);
     return 0;
 }
