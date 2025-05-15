@@ -9,12 +9,11 @@ This repository contains the documentation and implementation for the **Elive OS
 
 ## Elive OS Installation on VMware 
 <details>
-  <summary> Installation steps:</summary>
+  <summary>    Installation steps with requirements:</summary>
 
-  ### Requirements:
   
 <details>
-  <summary>Requirement:</summary>
+  <summary>     Requirement:</summary>
 
   - **Elive OS ISO** ([Download Official Website](https://www.elivecd.org/))
   - **VMware Workstation Player** (Free virtualization software)
