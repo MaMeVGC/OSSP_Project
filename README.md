@@ -54,7 +54,7 @@ This repository contains the documentation and implementation for the **Elive OS
 ---
 
   - **Elive OS Installation in webpages with Screenshots**:  
-    [View Elive OS Installation_steps in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/OS_installation.html)
+    [View Elive OS Installation_steps in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project/OS_installation.html)
 
 </details>
 
