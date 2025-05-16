@@ -112,7 +112,7 @@ This repository contains the documentation and implementation for the **Elive OS
   8. Observe the output showing the Process ID (PID).  
      Each run generates a different PID, demonstrating that a new process is created each time.
 ---
-  [View System Call in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/System_call.html)
+  [View System Call in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project/System_call.html)
 
   </details>
 
@@ -126,7 +126,7 @@ This repository contains the documentation and implementation for the **Elive OS
 ---
   ### Live Website  
   Experience a website of the Elive OS installation and system call implementation:  
-  **[Elive OS Installation & System Call](https://ababu1212.github.io/OSSP_Project_Abraham_Abunu/)**
+  **[Elive OS Installation & System Call](https://ababu1212.github.io/OSSP_Project/)**
 
   ---
   
